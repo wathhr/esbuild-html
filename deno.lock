@@ -1,14 +1,11 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@b-fuze/deno-dom@*": "0.1.48",
+    "jsr:@b-fuze/deno-dom@~0.1.48": "0.1.48",
     "jsr:@std/assert@^1.0.6": "1.0.6",
     "jsr:@std/internal@^1.0.4": "1.0.4",
     "jsr:@std/path@^1.0.6": "1.0.6",
-    "npm:@minify-html/wasm@*": "0.15.0",
-    "npm:@types/node@*": "22.5.4",
     "npm:esbuild@0.24": "0.24.0",
-    "npm:html-minifier@*": "4.0.0",
     "npm:html-minifier@4": "4.0.0"
   },
   "jsr": {
@@ -101,15 +98,6 @@
     "@esbuild/win32-x64@0.24.0": {
       "integrity": "sha512-7IAFPrjSQIJrGsK6flwg7NFmwBoSTyF3rl7If0hNUFQU4ilTsEPL6GuMuU9BfIWVVGuRnuIidkSMC+c0Otu8IA=="
     },
-    "@minify-html/wasm@0.15.0": {
-      "integrity": "sha512-xsd4FFypUayUNS4LvokyfiRQwYbyKVITnGHCaGsvlu36jZTYMSeQ7vn5LpEjW20Tbw7CYBQmD2JWCak/V+na5w=="
-    },
-    "@types/node@22.5.4": {
-      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
-      "dependencies": [
-        "undici-types"
-      ]
-    },
     "camel-case@3.0.0": {
       "integrity": "sha512-+MbKztAYHXPr1jNTSKQF52VpcFjwY5RkR7fxksV8Doo4KAYc5Fl4UJRgthBbTmEx8C54DqahhbLJkDwjI3PI/w==",
       "dependencies": [
@@ -194,21 +182,13 @@
     "uglify-js@3.19.3": {
       "integrity": "sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ=="
     },
-    "undici-types@6.19.8": {
-      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
-    },
     "upper-case@1.1.3": {
       "integrity": "sha512-WRbjgmYzgXkCV7zNVpy5YgrHgbBv126rMALQQMrmzOVC4GM2waQ9x7xtm8VU+1yF2kWyPzI9zbZ48n4vSxwfSA=="
     }
   },
-  "remote": {
-    "https://deno.land/x/denoflate@1.2.1/mod.ts": "f5628e44b80b3d80ed525afa2ba0f12408e3849db817d47a883b801f9ce69dd6",
-    "https://deno.land/x/denoflate@1.2.1/pkg/denoflate.js": "b9f9ad9457d3f12f28b1fb35c555f57443427f74decb403113d67364e4f2caf4",
-    "https://deno.land/x/denoflate@1.2.1/pkg/denoflate_bg.wasm.js": "d581956245407a2115a3d7e8d85a9641c032940a8e810acbd59ca86afd34d44d",
-    "https://deno.land/x/esbuild@v0.24.0/mod.js": "15b51f08198c373555700a695b6c6630a86f2c254938e81be7711eb6d4edc74e"
-  },
   "workspace": {
     "dependencies": [
+      "jsr:@b-fuze/deno-dom@~0.1.48",
       "jsr:@std/assert@^1.0.6",
       "jsr:@std/path@^1.0.6",
       "npm:esbuild@0.24",

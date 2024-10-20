@@ -4,8 +4,8 @@ import process from 'node:process';
 import { dirname, join, relative } from 'node:path';
 import { readFile } from 'node:fs/promises';
 import type * as esbuild from 'esbuild';
-import { minify } from 'npm:html-minifier';
-import { DOMParser } from 'jsr:@b-fuze/deno-dom';
+import { minify } from 'html-minifier';
+import { DOMParser } from '@b-fuze/deno-dom';
 import { toTransform } from "#/build-to-transform.ts";
 
 export type Props = Partial<{
