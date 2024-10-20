@@ -1,0 +1,32 @@
+{
+  "name": "@wathhr/esbuild-html",
+  "version": "0.1.0",
+  "exports": {
+    ".": "./src/mod.ts"
+  },
+  "exclude": ["node_modules"],
+  "license": "GPL-3.0-or-later",
+  "nodeModulesDir": "auto",
+  "imports": {
+    "#/": "./src/",
+    "@std/assert": "jsr:@std/assert@^1.0.6",
+    "@std/path": "jsr:@std/path@^1.0.6",
+    "esbuild": "npm:esbuild@^0.24.0",
+    "html-minifier": "npm:html-minifier@^4.0.0"
+  },
+  "lint": {
+    "include": [
+      "./src"
+    ]
+  },
+  "compilerOptions": {
+    "strict": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    // "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true
+  }
+}
